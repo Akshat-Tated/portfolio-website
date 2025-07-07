@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg:#0F1117;   /* Dark background */
+  --color-light-text:#FFFFFF;   /* Primary text */
+  --color-muted-text:#9CA3AF;   /* Secondary/muted text */
+  --color-accent-blue:#0EA5E9;   /* Accent/CTA blue */
+  --color-accent-blue-dark:#0284C7;   /* Hover state for accent */
+  --color-btn-dark:#1F2937;   /* Button background or dark boxes */
+  --color-btn-vdark:#1B263B;
+}
+
+body{
+  background-color:#0F1117 ;
+  color: #FFFFFF;
+  border-color: #9CA3AF;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/grid-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.01;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
