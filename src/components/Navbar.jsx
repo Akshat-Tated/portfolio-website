@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/akshat-tated" target="_blank" className="hover:text-accent-blue transition" title="LinkedIn">
             <SiLinkedin />
           </a>
-          <a href="https://github.com/yourusername" target="_blank" className="hover:text-accent-blue transition" title="GitHub">
+          <a href="https://github.com/Akshat-Tated" target="_blank" className="hover:text-accent-blue transition" title="GitHub">
             <SiGithub />
           </a>
         </div>
