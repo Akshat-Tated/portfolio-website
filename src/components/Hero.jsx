@@ -39,7 +39,7 @@ const Hero = () => {
             Say Hello
           </a>
           <a
-            href="/assets/Akshat_Tated_Resume.pdf"
+            href="/assets/Akshat_Tated_Final Resume.pdf"
             className="border border-accent-blue text-accent-blue px-5 py-2 rounded hover:bg-accent-blue hover:text-white transition"
           >
             Download Resume

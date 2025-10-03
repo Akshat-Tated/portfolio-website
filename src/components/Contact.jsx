@@ -16,7 +16,7 @@ const Contact = () => {
         </a>
 
         {/* Social Icons */}
-        <div className="mt-8 flex justify-center gap-6">
+        {/* <div className="mt-8 flex justify-center gap-6">
           <a href="mailto:akshattated18@gmail.com" className="text-muted-text hover:text-accent-blue text-xl transition">
             📧
           </a>
@@ -29,7 +29,7 @@ const Contact = () => {
           <a href="https://twitter.com/" target="_blank" className="text-muted-text hover:text-accent-blue text-xl transition">
             🐦
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

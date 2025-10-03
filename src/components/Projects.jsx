@@ -8,12 +8,12 @@ const projects = [
     link: 'https://akshat-tated.github.io/Dailybit/#/habittracker',
   },
   {
-    title: 'Weather App',
+    title: 'Wonders',
     description:
-      'Responsive web app using OpenWeatherMap API to show live weather for 100+ cities with a clean, mobile-optimized UI.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    image: 'assets/weatherapp.png',
-    link: 'https://akshat-tated.github.io/weather_app/',
+      'Built a full-stack hotel booking platform with authentication, CRUD operations, and real-time reviews.',
+    tech: ['HTML', 'CSS', 'JavaScript','Node.js','Express.js','MongoDB'],
+    image: 'assets/Wondersapp.png',
+    link: 'https://major-project-sclo.onrender.com/listings',
   },
 ];
 

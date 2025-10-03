@@ -1,10 +1,14 @@
 import {
-  SiReact, SiTailwindcss, SiJavascript, SiNodedotjs,
-  SiMongodb, SiGit, SiHtml5, SiCss3,
-  SiFirebase, SiWordpress, SiPython, SiFigma,
+  SiReact, SiTailwindcss, SiJavascript, SiNodedotjs, SiMongodb, 
+  SiGit, SiHtml5, SiCss3, SiWordpress, SiFigma, 
+  SiExpress, SiMysql
 } from 'react-icons/si';
+import { FaPaintBrush } from 'react-icons/fa';
+
 
 const skills = [
+  { name: 'WordPress', icon: SiWordpress },
+  { name: 'CorelDRAW', icon: FaPaintBrush },
   { name: 'React', icon: SiReact },
   { name: 'TailwindCSS', icon: SiTailwindcss },
   { name: 'JavaScript', icon: SiJavascript },
@@ -13,11 +17,10 @@ const skills = [
   { name: 'Git', icon: SiGit },
   { name: 'HTML5', icon: SiHtml5 },
   { name: 'CSS3', icon: SiCss3 },
-  { name: 'Firebase', icon: SiFirebase },
-  { name: 'WordPress', icon: SiWordpress },
-  { name: 'Python', icon: SiPython },
-  { name: 'Figma', icon: SiFigma },
+  { name: 'Express.js', icon: SiExpress },
+  { name: 'SQL', icon: SiMysql },
 ];
+
 
 const Skills = () => {
   return (

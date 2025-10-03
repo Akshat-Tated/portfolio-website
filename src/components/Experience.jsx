@@ -17,7 +17,7 @@ const experiences = [
     title: 'Freelance Developer & Designer',
     company: 'Self-Employed',
     type: '',
-    duration: '',
+    duration: 'Jan 2020 – Present',
     image: '/assets/freelance-work.png', // your freelance image
     highlights: [
       'Developed 5+ professional websites for clients using WordPress.',
