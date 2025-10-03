@@ -4,7 +4,7 @@ const Hero = () => {
 
       {/* 🔹 Grid + Glow Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/assets/grid-bg.png')] bg-cover bg-center opacity-[0.07] pointer-events-none" />
+        <div className="absolute inset-0 bg-[url('/grid-bg.png')] bg-cover bg-center opacity-[0.07] pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0F1117] via-[#121F30]/60 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#1a2a40_0%,_#0f1117_80%)] opacity-50" />
       </div>
