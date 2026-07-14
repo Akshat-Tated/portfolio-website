@@ -6,13 +6,13 @@ const Hero = () => {
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         
         {/* Text Section */}
-        <div className="flex-1 order-2 md:order-1">
+        <div className="flex-1 order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-light-text">
             Akshat Tated
           </h1>
           
           {/* Status Line */}
-          <div className="mt-6 flex flex-wrap items-center gap-3 mono text-sm md:text-base border border-border-subtle bg-surface px-4 py-2 w-fit rounded-sm shadow-sm">
+          <div className="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3 mono text-sm md:text-base border border-border-subtle bg-surface px-4 py-2 w-fit rounded-sm shadow-sm">
             <span className="text-secondary font-bold">● STATUS:</span>
             <span className="text-muted-text tracking-wide">OPEN TO WORK · BUILDING UNITFORGE</span>
           </div>
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
             <a
               href="mailto:akshattated18@gmail.com"
               className="bg-primary text-dark-bg px-6 py-3 rounded-sm font-semibold hover:opacity-90 transition mono text-sm uppercase tracking-wide"
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="order-1 md:order-2 md:w-1/3 shrink-0 flex justify-center md:justify-end">
+        <div className="order-1 md:order-2 md:w-1/3 shrink-0 flex justify-center md:justify-end mt-24 md:mt-0">
           <div className="relative p-2 bg-surface border border-border-subtle rounded-md shadow-lg">
             <img 
               src="assets/heroimg.png" 
