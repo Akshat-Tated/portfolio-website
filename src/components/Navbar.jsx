@@ -1,52 +1,56 @@
-import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
+import { useState } from 'react';
 
 const Navbar = () => {
-  return (
-    <nav className="fixed top-0 w-full z-50 text-light-text">
-      {/* 🔹 Background Layer: Grid + Glow */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/assets/grid-bg.png')] bg-cover bg-center opacity-[0.03] pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F1117] via-[#121F30]/80 to-transparent backdrop-blur-md" />
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      {/* 🔹 Navbar Content */}
+  return (
+    <nav className="fixed top-0 w-full z-50 text-light-text bg-dark-bg/90 backdrop-blur-md border-b border-border-subtle">
       <div className="relative max-w-7xl mx-auto px-6 py-4 flex items-center justify-between z-10">
         
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <img
-            src="assets/logo.png"
-            alt="Akshat Logo"
-            className="w-9 h-9 object-contain transition hover:brightness-110"
-          />
+        <div className="flex items-center">
+          <img src="assets/logo.png" alt="Logo" className="w-8 h-8 opacity-90 hover:opacity-100 transition" />
         </div>
 
-        {/* Nav Links */}
-        <div className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+        {/* Desktop Nav Links */}
+        <div className="hidden md:flex gap-8 mono text-xs tracking-wide">
           {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map(link => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="hover:text-accent-blue transition duration-200"
+              className="text-muted-text hover:text-white transition duration-200"
             >
-              {link}
+              // {link.toUpperCase()}
             </a>
           ))}
         </div>
 
-        {/* Social Icons */}
-        <div className="flex items-center gap-5 text-xl text-muted-text">
-          <a href="mailto:akshattated18@gmail.com" className="hover:text-accent-blue transition" title="Gmail">
-            <SiGmail />
-          </a>
-          <a href="https://www.linkedin.com/in/akshat-tated" target="_blank" className="hover:text-accent-blue transition" title="LinkedIn">
-            <SiLinkedin />
-          </a>
-          <a href="https://github.com/Akshat-Tated" target="_blank" className="hover:text-accent-blue transition" title="GitHub">
-            <SiGithub />
-          </a>
+        {/* Mobile Hamburger Icon */}
+        <div className="md:hidden">
+          <button 
+            onClick={() => setIsOpen(!isOpen)} 
+            className="text-muted-text hover:text-white focus:outline-none mono text-sm flex items-center justify-center w-8 h-8 border border-border-subtle rounded-sm bg-surface"
+          >
+            {isOpen ? '[X]' : '[≡]'}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#0a0c0a] border-b border-border-subtle py-4 px-6 flex flex-col gap-4 shadow-xl">
+          {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map(link => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              onClick={() => setIsOpen(false)}
+              className="mono text-sm tracking-wide text-muted-text hover:text-white border-l-2 border-border-subtle hover:border-primary pl-3 py-2 transition-all bg-surface/50"
+            >
+              // {link.toUpperCase()}
+            </a>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };

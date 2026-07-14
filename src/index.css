@@ -1,30 +1,56 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark-bg:#0F1117;   /* Dark background */
-  --color-light-text:#FFFFFF;   /* Primary text */
-  --color-muted-text:#9CA3AF;   /* Secondary/muted text */
-  --color-accent-blue:#0EA5E9;   /* Accent/CTA blue */
-  --color-accent-blue-dark:#0284C7;   /* Hover state for accent */
-  --color-btn-dark:#1F2937;   /* Button background or dark boxes */
-  --color-btn-vdark:#1B263B;
+  --color-dark-bg: #0F1310;
+  --color-surface: #171B18;
+  --color-primary: #E8641C;
+  --color-secondary: #4FD1A5;
+  --color-light-text: #EDEDE8;
+  --color-muted-text: #8B928C;
+  --color-border-subtle: #2A2F2B;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
-body{
-  background-color:#0F1117 ;
-  color: #FFFFFF;
-  border-color: #9CA3AF;
+body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
 }
 
-.grid-overlay {
-  position: absolute;
-  inset: 0;
-  background-image: url('/grid-bg.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.01;
-  pointer-events: none;
-  z-index: 0;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
 
+.mono {
+  font-family: var(--font-mono);
+}
 
+/* Base sections */
+section {
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+/* Animations for build log ticker */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}
+
+/* Subtle hover lift */
+.hover-lift {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+  }
+}

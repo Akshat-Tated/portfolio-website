@@ -1,11 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-dark-bg text-muted-text text-sm py-6 border-t border-muted-text text-center">
-      <div className="max-w-6xl mx-auto px-4">
-        <p>&copy; {new Date().getFullYear()} Akshat Tated. All rights reserved.</p>
-        <p className="mt-1">
-          Built with <span className="text-accent-blue">React</span> & styled with <span className="text-accent-blue">TailwindCSS</span>.
-        </p>
+    <footer className="bg-dark-bg text-muted-text py-8 border-t border-border-subtle text-center mono text-xs">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-2">
+        <p>SYSTEM_HALT / EOF</p>
+        <p className="opacity-60">&copy; {new Date().getFullYear()} Akshat Tated. All systems nominal.</p>
       </div>
     </footer>
   );

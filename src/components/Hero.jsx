@@ -1,52 +1,73 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-dark-bg text-light-text">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 bg-dark-bg text-light-text overflow-hidden">
+      
+      {/* 🔹 Hero Content - Test Bench Layout */}
+      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        
+        {/* Text Section */}
+        <div className="flex-1 order-2 md:order-1">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-light-text">
+            Akshat Tated
+          </h1>
+          
+          {/* Status Line */}
+          <div className="mt-6 flex flex-wrap items-center gap-3 mono text-sm md:text-base border border-border-subtle bg-surface px-4 py-2 w-fit rounded-sm shadow-sm">
+            <span className="text-secondary font-bold">● STATUS:</span>
+            <span className="text-muted-text tracking-wide">OPEN TO WORK · BUILDING UNITFORGE</span>
+          </div>
 
-      {/* 🔹 Grid + Glow Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/grid-bg.png')] bg-cover bg-center opacity-[0.07] pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F1117] via-[#121F30]/60 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#1a2a40_0%,_#0f1117_80%)] opacity-50" />
-      </div>
+          <p className="mt-8 text-muted-text text-lg max-w-2xl leading-relaxed">
+            Test-automation and full-stack engineer. Focused on building reliable verification tools and functional web experiences with precision.
+          </p>
 
-      {/* 🔹 Hero Content */}
-      <div className="relative z-10 flex flex-col items-center gap-6 max-w-2xl">
-
-        {/* Profile Image */}
-        <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-accent-blue shadow-xl">
-          <img
-            src="assets/heroimg.png"
-            alt="Akshat"
-            className="w-full h-full object-cover"
-          />
+          {/* Buttons */}
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="mailto:akshattated18@gmail.com"
+              className="bg-primary text-dark-bg px-6 py-3 rounded-sm font-semibold hover:opacity-90 transition mono text-sm uppercase tracking-wide"
+            >
+              Initialize_Contact()
+            </a>
+            <a
+              href="/assets/Akshat_Tated-Resume_Latest.pdf"
+              className="border border-border-subtle bg-surface text-light-text px-6 py-3 rounded-sm hover:border-primary hover:text-primary transition mono text-sm uppercase tracking-wide"
+            >
+              View_Logs(--resume)
+            </a>
+          </div>
         </div>
 
-        {/* Intro Text */}
-        <p className="uppercase text-sm tracking-widest text-muted-text">
-          Welcome to my portfolio
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold">Hi, I'm Akshat</h1>
-        <p className="text-muted-text text-lg max-w-md">
-          A passionate developer focused on building elegant, modern, and functional web experiences.
-        </p>
+        {/* Image Section */}
+        <div className="order-1 md:order-2 md:w-1/3 shrink-0 flex justify-center md:justify-end">
+          <div className="relative p-2 bg-surface border border-border-subtle rounded-md shadow-lg">
+            <img 
+              src="assets/heroimg.png" 
+              alt="Akshat Tated" 
+              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-sm border border-border-subtle opacity-90 hover:opacity-100 transition duration-500" 
+            />
+          </div>
+        </div>
 
-        {/* Buttons */}
-        <div className="mt-4 flex flex-wrap justify-center gap-4">
-          <a
-            href="mailto:akshattated18@gmail.com"
-            className="bg-accent-blue hover:bg-accent-blue-dark text-white px-5 py-2 rounded font-medium transition"
-          >
-            Say Hello
-          </a>
-          <a
-            href="/assets/Akshat_Tated-Resume_Latest.pdf"
-            className="border border-accent-blue text-accent-blue px-5 py-2 rounded hover:bg-accent-blue hover:text-white transition"
-          >
-            Download Resume
-          </a>
+      </div>
+
+      {/* Signature Element: Animated Build Log Ticker */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-border-subtle bg-dark-bg py-2">
+        <div className="flex whitespace-nowrap animate-ticker mono text-[11px] md:text-xs text-muted-text/60">
+          <span className="px-8">[sys] compiling resume.jsx... ✓</span>
+          <span className="px-8">[sys] running tests: skills_module... ✓ 100%</span>
+          <span className="px-8">[test] verifying UnitForge agents... OK</span>
+          <span className="px-8">[lint] checking responsive_layout... PASSED</span>
+          <span className="px-8">[deploy] portfolio v2.0... 🚀 LIVE</span>
+          
+          {/* Duplicate for seamless loop */}
+          <span className="px-8">[sys] compiling resume.jsx... ✓</span>
+          <span className="px-8">[sys] running tests: skills_module... ✓ 100%</span>
+          <span className="px-8">[test] verifying UnitForge agents... OK</span>
+          <span className="px-8">[lint] checking responsive_layout... PASSED</span>
+          <span className="px-8">[deploy] portfolio v2.0... 🚀 LIVE</span>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-[#0F1117] z-0" />
     </section>
   );
 };
