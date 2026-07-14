@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 bg-dark-bg text-light-text overflow-hidden">
       
       {/* 🔹 Hero Content - Test Bench Layout */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 pb-24 md:pb-12">
         
         {/* Text Section */}
         <div className="flex-1 order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
