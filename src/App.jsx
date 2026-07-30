@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Certifications from './components/Certifications'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Skills/>
     <Experience/>
     <Projects/>
+    <Certifications/>
     <Contact/>
     <Footer/>
     </>

@@ -14,7 +14,7 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex gap-8 mono text-xs tracking-wide">
-          {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map(link => (
+          {['About', 'Skills', 'Experience', 'Projects', 'Certifications', 'Contact'].map(link => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
@@ -39,7 +39,7 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-[#0a0c0a] border-b border-border-subtle py-4 px-6 flex flex-col gap-4 shadow-xl">
-          {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map(link => (
+          {['About', 'Skills', 'Experience', 'Projects', 'Certifications', 'Contact'].map(link => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
