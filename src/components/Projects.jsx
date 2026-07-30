@@ -26,7 +26,7 @@ const projects = [
     description: 'Automation framework built using Selenium WebDriver and Pytest. Features POM architecture, handling UI and REST API test suites.',
     tech: ['Python', 'Selenium', 'Pytest', 'REST API'],
     link: 'https://github.com/Akshat-Tated/pytest-automation-framework',
-    image: 'assets/pytestautomation.png'
+    image: 'assets/pytestframework.png'
   }
 ];
 
