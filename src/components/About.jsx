@@ -13,7 +13,7 @@ const About = () => {
               [SUMMARY]
             </h3>
             <p className="text-muted-text text-base md:text-lg leading-relaxed">
-              Final-year B.Tech CSE student (CGPA 8.8, JECRC University) with hands-on experience in full-stack development and test automation.
+              B.Tech CSE graduate (CGPA 8.8, JECRC University, 2026) with hands-on experience in full-stack development and test automation.
             </p>
             <p className="text-muted-text text-base md:text-lg mt-4 leading-relaxed">
               Previously built and deployed 5+ client websites as a freelancer and maintained a production WordPress site for an NGO (Daanpatra). Focuses on clean architecture and rigorous testing.

@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'UnitForge — AI-Powered Unit Test Generation Engine',
-    description: 'an AI-powered engine that analyzes a Python or Java codebase and automatically generates production-ready unit tests. Phase 1 completed, LLM test-agent integration in progress.',
+    description: 'an AI-powered engine that analyzes a Python or Java codebase and automatically generates production-ready unit tests. Phase 5 completed, cloud deployment in progress.',
     tech: ['Python 3.12', 'Spring Boot 3.3', 'Java 21', 'Redis', 'PostgreSQL 16', 'React 18', 'Docker', 'Anthropic SDK'],
     link: 'https://github.com/Akshat-Tated/UnitForge',
     status: 'STATUS: IN DEVELOPMENT',
@@ -11,7 +11,7 @@ const projects = [
     title: 'Interview Preparation AI Platform',
     description: 'Full-stack AI interview prep platform integrating Gemini API for dynamic, role-specific Q&A generation across 10+ job categories with answer evaluation.',
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Gemini API', 'TailwindCSS', 'JWT'],
-    link: 'https://github.com/Akshat-Tated',
+    link: 'https://interview-prep-ai-indol-tau.vercel.app/',
     image: 'assets/landing-page.png',
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     description: 'Automation framework built using Selenium WebDriver and Pytest. Features POM architecture, handling UI and REST API test suites.',
     tech: ['Python', 'Selenium', 'Pytest', 'REST API'],
     link: 'https://github.com/Akshat-Tated/pytest-automation-framework',
-    image: 'assets/habittracker.png'
+    image: 'assets/pytestautomation.png'
   }
 ];
 

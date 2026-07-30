@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
 
           <p className="mt-8 text-muted-text text-lg max-w-2xl leading-relaxed">
-            Test-automation and full-stack engineer. Focused on building reliable verification tools and functional web experiences with precision.
+            Full-stack engineer and test-automation. Focused on building reliable verification tools and functional web experiences with precision.
           </p>
 
           {/* Buttons */}
@@ -30,7 +30,7 @@ const Hero = () => {
               Initialize_Contact()
             </a>
             <a
-              href="/assets/Akshat_Tated-Resume_Latest.pdf"
+              href="/assets/Akshat_Tated__Resume.pdf"
               className="border border-border-subtle bg-surface text-light-text px-6 py-3 rounded-sm hover:border-primary hover:text-primary transition mono text-sm uppercase tracking-wide"
             >
               View_Logs(--resume)
