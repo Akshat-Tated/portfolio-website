@@ -28,6 +28,15 @@ const badges = [
     issuer: 'MongoDB',
     image: 'assets/badge_4.png',
     link: '#'
+  },
+  {
+    id: 5,
+    name: 'Microsoft Certified: Azure AI Cloud Developer Associate',
+    issuer: 'Microsoft',
+    date: '25 Aug 2026',
+    description: 'Associate-level Microsoft certification validating skills in developing AI cloud solutions on Azure.',
+    image: 'assets/badge_5.svg',
+    link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/'
   }
 ];
 
@@ -44,7 +53,7 @@ const Certifications = () => {
           Industry-recognized certifications and achievement badges demonstrating continuous learning across Cloud, AI, Databases, and Software Development.
         </p>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 justify-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 justify-center">
           {badges.map((badge) => (
             <div 
               key={badge.id} 
@@ -63,9 +72,23 @@ const Certifications = () => {
                 {badge.name}
               </h3>
               
-              <p className="mono text-[10px] md:text-xs text-muted-text text-center mb-6">
+              <p className="mono text-[10px] md:text-xs text-muted-text text-center mb-1">
                 @ {badge.issuer}
               </p>
+              
+              {badge.date && (
+                <p className="mono text-[9px] md:text-[10px] text-muted-text/70 text-center mb-1">
+                  {badge.date}
+                </p>
+              )}
+              
+              {badge.description && (
+                <p className="text-[10px] md:text-xs text-muted-text text-center mb-4 line-clamp-3">
+                  {badge.description}
+                </p>
+              )}
+              
+              <div className={!badge.description ? "mb-6" : ""} />
               
               <a 
                 href={badge.link}
