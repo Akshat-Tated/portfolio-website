@@ -57,18 +57,18 @@ const Certifications = () => {
           {badges.map((badge) => (
             <div 
               key={badge.id} 
-              className="bg-surface border border-border-subtle rounded-md p-4 md:p-6 flex flex-col items-center hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(232,100,28,0.15)] hover:border-primary transition-all duration-300"
+              className="flex flex-col items-center group h-full"
             >
-              <div className="w-full aspect-square mb-6 bg-[#0F1310] border border-border-subtle rounded-sm p-4 flex items-center justify-center">
+              <div className="w-full aspect-square mb-6 bg-surface border border-border-subtle rounded-md p-6 flex items-center justify-center group-hover:-translate-y-1 group-hover:scale-[1.02] group-hover:shadow-[0_0_15px_rgba(232,100,28,0.15)] group-hover:border-primary transition-all duration-300">
                 <img 
                   src={badge.image} 
                   alt={badge.name} 
                   loading="lazy" 
-                  className="w-full h-full object-contain filter grayscale-[50%] hover:grayscale-0 transition-all duration-300" 
+                  className="w-full h-full object-contain filter grayscale-[50%] group-hover:grayscale-0 transition-all duration-300" 
                 />
               </div>
               
-              <h3 className="text-sm md:text-base font-bold text-light-text mb-2 text-center flex-grow">
+              <h3 className="text-sm md:text-base font-bold text-light-text mb-2 text-center flex-grow group-hover:text-primary transition-colors">
                 {badge.name}
               </h3>
               
@@ -94,7 +94,7 @@ const Certifications = () => {
                 href={badge.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto mono text-[10px] md:text-xs text-primary border border-primary/20 bg-primary/5 px-3 py-2 rounded-sm hover:bg-primary/10 transition-colors text-center w-full uppercase tracking-wider"
+                className="mt-auto mono text-[10px] md:text-xs text-primary border border-primary/20 bg-primary/5 px-3 py-2 rounded-sm group-hover:bg-primary/10 transition-colors text-center w-full uppercase tracking-wider"
               >
                 [ View_Credential ]
               </a>
