@@ -72,23 +72,9 @@ const Certifications = () => {
                 {badge.name}
               </h3>
               
-              <p className="mono text-[10px] md:text-xs text-muted-text text-center mb-1">
+              <p className="mono text-[10px] md:text-xs text-muted-text text-center mb-6">
                 @ {badge.issuer}
               </p>
-              
-              {badge.date && (
-                <p className="mono text-[9px] md:text-[10px] text-muted-text/70 text-center mb-1">
-                  {badge.date}
-                </p>
-              )}
-              
-              {badge.description && (
-                <p className="text-[10px] md:text-xs text-muted-text text-center mb-4 line-clamp-3">
-                  {badge.description}
-                </p>
-              )}
-              
-              <div className={!badge.description ? "mb-6" : ""} />
               
               <a 
                 href={badge.link}
